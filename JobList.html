@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="stylejoblist.css"media="all" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+  <input class="button button2" type="button" value="User Profile" onclick="window.location.href='newprofile.html'" />
+  <input class="button button3" type="button" value="Logout" onclick="btnLogoutUser()"/>
+<br>
+<br>
+
+
+        
+<div id="TableAll">
+        <input style="width:30%" type="text" id="myInput" onkeyup="myNames()" placeholder="Search for companies.." title="Type in a Company">
+        <input style="width:30%" type="text" id="myCity" onkeyup="myCities()" placeholder="Search for cities.." title="Type in a city">
+        <p></p>
+    
+
+<section>
+    <nav>
+        
+                <h4>Cities  
+                 
+                  
+                </h4>
+                <input name='tablefilter' type='checkbox' value='Copenhagen' id='tablefilter1' checked/>
+                <label for='tablefilter1'>Copenhagen</label>
+                <br></br>
+                <input name='tablefilter' type='checkbox' value='Aarhus' id='tablefilter2' checked/>
+                <label for='tablefilter2'>Aarhus</label>
+                <br></br>
+                <input name='tablefilter' type='checkbox' value='Odense' id='tablefilter3' checked/>
+                <label for='tablefilter3'>Odense</label>
+                <br></br>
+                
+                <h4>Type of Job</h4>
+                
+                <input name='tablefilter' type='checkbox' value='Part Time' id='tablefilter5' checked/>
+                <label for='tablefilter5'>Part Time</label>
+                <br></br>
+                <input name='tablefilter' type='checkbox' value='Internship' id='tablefilter6' checked/>
+                <label for='tablefilter6'>Internship</label>
+                <br></br>
+                <button onclick="document.location.reload(true)">Restore Preferences</button>
+                <!-- <button onclick="bringback()">Bring Back</button>
+                <button onclick="reset()">Clear Cache</button> -->
+                
+                <ul> <button name='tablefilter' onclick="selectall()" id="SelectButton">Select all</button>
+        </ul>
+    </nav>
+    
+    <table id="myTable">
+            <tbody id='tablebody'>
+    
+      <tr class="header"  >
+        <th style="width:30%;">Job Title</th>
+        <th style="width:20%;">Name</th>
+        <th style="width:20%;">City</th>
+        <th style="width:20%;">Type</th>
+        
+      </tr>
+      <tr onclick="ShowGoaa()" id="Goaa" >
+          <td>Account strategist</td>
+    <td>Google</td>
+    <td>Aarhus</td>
+    <td>Internship</td>
+        
+      </tr>
+      <tr onclick="ShowTraa()"  id="Traa" >
+         <td>Account Development</td> 
+        <td>TrustPilot</td>
+        <td>Aarhus</td>
+            
+        <td>Internship</td>
+        
+    
+      </tr>
+    
+        <tr onclick="ShowCaco()" id="Caco" >
+            <td>Product assistant</td> 
+        <td>Carlsberg</td>
+        <td>Copenhagen</td>
+        <td>Part Time</td>
+      </tr>
+      <tr  onclick="ShowGoco()" id="Goco" >
+          <td>Ad reviewer</td> 
+        <td>Google</td>
+        <td>Copenhagen</td>
+        <td>Part Time</td>
+      </tr>
+      <tr onclick="ShowMaod()" id="Maod" >   
+          <td>Social Media manager</td> 
+        <td>Maersk</td>
+        <td>Odense</td>
+        <td>Internship</td>
+  
+      </tr>
+      <tr onclick="ShowLeaa()" id="Leaa"  >
+          <td>Business dev assistant</td> 
+        <td>Lego</td>
+        <td>Aarhus</td>
+        <td>Part Time</td>
+      </tr>
+      <tr onclick="ShowCoaa()" id="Coaa">
+          <td>PR assistant</td> 
+        <td>Coop</td>
+        <td>Aarhus</td>
+        <td>Part Time</td>
+      </tr>
+      <tr onclick="ShowIkod()" id="Ikod">
+          <td>Marketing intern</td> 
+        <td>Ikea</td>
+        <td>Odense</td>
+        <td>Internship</td>
+      </tr>
+    </tbody>
+    
+    </table>
+    <br>
+    <br>
+    <!-- <h1  style="color:white; opacity: 1;">Applied</h1> -->
+    <table id="myTable2">
+        
+        <tbody id='appliedtablebody'>
+
+  <tr class="header"  >
+    <th style="width:3;">Applied</th>
+    
+  </tr>
+  <tr id="Goaa"  >
+    <td style="width:300px;">Account strategist</td>
+    <td style="width:225px;">Google</td>
+    <td style="width:200px;">Aarhus</td>
+    <td style="width:200px;">Internship</td>
+    
+  </tr>
+
+    <tr id="Caco" >
+        <td style="width:300px;">Product assistant</td> 
+    <td style="width:225px;">Carlsberg</td>
+    <td style="width:200px;">Copenhagen</td>
+    <td style="width:200px;">Part Time</td>
+  </tr>
+  <tr id="Goco" >
+      <td  style="width:300px;">Ad reviewer</td> 
+    <td style="width:225px;">Google</td>
+    <td style="width:200px;">Copenhagen</td>
+    <td style="width:200px;">Part Time</td>
+  </tr>
+
+  <tr id="Traa" >
+      <td style="width:300px;">Account Development</td> 
+     <td style="width:225px;">TrustPilot</td>
+     <td style="width:200px;">Aarhus</td>
+         
+     <td style="width:200px;">Internship</td>
+     </tr>
+
+  <tr id="Maod">   
+      <td style="width:300px;">Social Media manager</td> 
+    <td style="width:225px;">Maersk</td>
+    <td style="width:200px;">Odense</td>
+    <td style="width:200px;">Internship</td>
+
+  </tr>
+  <tr id="Leaa"  >
+      <td  style="width:300px;">Business dev assistant</td> 
+    <td style="width:225px;">Lego</td>
+    <td style="width:200px;">Aarhus</td>
+    <td style="width:200px;">Part Time</td>
+  </tr>
+  <tr id="Coaa">
+      <td  style="width:300px;">PR assistant</td> 
+    <td style="width:225px;">Coop</td>
+    <td style="width:200px;">Aarhus</td>
+    <td style="width:200px;">Part Time</td>
+  </tr>
+  <tr id="Ikod">
+      <td  style="width:300px;">Marketing intern</td> 
+    <td style="width:225px;">Ikea</td>
+    <td style="width:200px;">Odense</td>
+    <td style="width:200px;">Internship</td>
+  </tr>
+</tbody>
+
+</table>
+</section>
+  </div>
+
+
+    
+  <p></p>
+    <p></p>
+    <p></p>
+   
+
+   
+  
+<div id="alljobs">
+<div id="GocoJob" class="jobs" name="Specific">
+    <h1>Ad reviewer</h1>
+  <h2>Google - Copenhagen</h2>
+  <h3>Job Description</h3>
+ 
+  A typical day at work will be coming in at 8 in the morning and sitting down and look and review videos that were published on the queue. The workplace and culture was amazing, all my coworkers were friendly and nice. The hardest part of the job will probably be when we get meetings at random times and the most enjoyable part of the job is the environment.
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+
+</div>
+
+<div id="CacoJob" class="jobs" name="Specific">
+    <h1>Product assistant</h1>
+
+  <h2>Carlsberg - Copenhagen</h2>
+    <h3>Job Description</h3>
+    1. Assist talent development programs based on the business needs to build the bench-strength for achieving business objectives
+    2. Conduct national training needs analysis and to identify the training strategy and build the training curriculum
+    3. Lead, plan and implement the New Hire Orientation and English programs in all BUs
+    4. Provide consulting and advisory service on issues relating to training
+    5. Maintain the national training inventory, external training vendor information and internal training program participants database
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+    </div>
+    <div id="GoaaJob" class="jobs" name="Specific">
+        <h1>Account strategist</h1>
+        <h2>Google - Aarhus</h2>
+        <h3>Job Description</h3>
+        As an Account Strategist, you will advocate the value of our products to online publishers and mobile developers and manage a business pipeline to develop new business partnerships. You will be responsible for increasing the the success of top online publishers by developing strong relationships, providing product expertise and exceptional customer support. You will also need to solicit customer feedback and work with Product Management to communicate customer needs, enhancements and priorities.
+        <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+        <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+       
+        </div>
+
+<div id="LeaaJob" class="jobs" name="Specific">
+<h1>Business dev assistant</h1>
+<h2>Lego - Aarhus</h2>
+<h3>Job Description</h3>
+As a Business Development Manager, you will drive process improvement and process documentation activities and you will be the owner of the Procurement Communication Platform (SharePoint) ensuring structure, content and platform development. Day to day you will take responsibility of our Communication platform (SharePoint) and the Procurement Process Documentation.
+
+<input type="button" class= "button1 button4" onclick="back()" value="back"/>
+<input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+
+</div>
+
+<div id="CoaaJob" class="jobs" name="Specific">
+  <h1>PR Assistant</h1>
+  <h2>Coop  - Aarhus</h2>
+  <h3>Job Description</h3>
+  PR assistants, along with account executives and other media relations specialists, help create and manage positive public perceptions of their clients. While the targeted group depends on the type of client, PR assistants help maintain affirmative relationships between the client and other businesses, employees, investors, legislators, customers, or other communities. As an entry-level employee, the PR assistant supports all members of the agency or firm in the day-to-day functions of media relations and the satisfaction of client needs.
+
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+
+</div>
+
+<div id="MaodJob" class="jobs" name="Specific">
+  <h1>Social Media Manager</h1>
+  <h2>Maersk - Odense</h2>
+  <h3>Job Description</h3>
+  The position has three primary aspects: strategic development, content execution and measuring results. So from day to day execution to creating collaborative strategies penetrating our core business product - you will have a broad job scope.
+  <br>
+  Due to the cross functional nature of social media, you will work together with important stakeholders to ensure timely, correct and relevant content.
+
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+</div>
+
+<div id="IkodJob" class="jobs" name="Specific">
+  <h1>Marketing Intern</h1>
+  <h2>Ikea - Odense</h2>
+  <h3>Job Description</h3>
+  Marketing allows us to reach the many people to explain the IKEA offer to them. IKEA wants to reach the many people on each local market. This is why we have jobs in marketing and communication in all IKEA retail countries, even if numbers are limited. The overall task is to build the IKEA brand and inspire people to come to the stores. 
+
+
+
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+
+</div>
+
+<div id="TraaJob" class="jobs" name="Specific">
+  <h1>Account Development</h1>
+  <h2>Trust Pilot - Aarhus</h2>
+  <h3>Job Description</h3>
+
+1. Engage with prospects to uncover needs, qualify potential opportunities and build relationships
+2. Initiate sales processes by outbound prospecting to generate leads and warm lead follow up
+3. Explain our products and articulate Trustpilot’s value proposition
+4. Partner with the Business Development Managers to set up meetings with new prospects
+5. Achieve activity and support closed business
+  <input type="button" class= "button1 button4" onclick="back()" value="back"/>
+  <input type="button" class= "button1 button5" onclick="applyany()" value="Apply"/>
+</div>
+</div>
+    
+
+<script  src="UserClasses.js"></script>
+<script  src="JobList.js"></script>
+      
+</body>
+
+</html>
+
+
+

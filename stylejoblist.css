@@ -1,0 +1,189 @@
+
+ *{
+    box-sizing: border-box;
+  
+  }
+  html{
+    height: 768px;
+    width: 1366px;
+    overflow-y: scroll;
+  
+  }
+      html, body { 
+      
+      color: #000;
+      font-family:'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
+      background:url(../student-intern.jpg);
+  opacity: 0.95;
+      background-size:cover;
+  
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat;/* Do not repeat the image */
+      background-attachment: fixed; } 
+  
+  .button {
+    background-color: rgb(105, 154, 194);
+    
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+  .button2{
+    position: absolute;
+      top: 0px;
+      right:110px;
+  }
+  .button3{
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+  
+  .button1 {
+    border: none;
+    max-width:100;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left: 70;  
+  }
+  
+  .button4{
+      background-color: rgb(145, 194, 226);
+      position: absolute;
+    top: 450px;
+    right:400px;
+  }
+  
+  .button5{
+      background-color: rgb(42, 118, 218);
+      position: absolute;
+    top: 450px;
+    right: 300px;
+  }
+  
+  .jobs {
+    
+    background-color: rgb(185, 185, 185);
+  
+  padding: 40px;
+  width:700px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+  /* transition: .5s ease; */
+  /* margin-left: 200px; */
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%) }
+      
+  
+  #myInput {
+   
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myCity {
+    
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  nav {
+    float: left;
+    width: 15%;
+    height: 600px;
+    /* height: 500px; only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #myTable {
+    background-color: white ;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+   
+  }
+  
+  
+  #myTable2 {
+    background-color: white ;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    /* position: fixed; /* or absolute */
+    /* top: 600px; */
+    /* left:250px; */ 
+   
+   
+  }
+  
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 14px;
+  
+  }
+  
+  #myTable tr {
+    border-bottom: 2px solid #ddd;
+    height:50px
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #0c4baa;
+  }
+  
+  
+   #myTable2 td {
+    text-align: left;
+    padding: 14px;
+    width: 400px;
+    
+    
+  }
+  
+  #myTable2 tr {
+    border-bottom: 2px solid #ddd;
+    height:50px;
+    
+  }
+  
+  #myTable2 tr.header, #myTable2 tr:hover {
+    background-color: #2d75e0;
+  }

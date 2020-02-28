@@ -1,0 +1,41 @@
+<html>
+    <head>
+            <link href="styleApply.css"media="all" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+            <div id="APPLY"  name="test">
+    
+    
+                    <h2 id="COMPANY"></h2>
+                    <h3 id="CITY"></h3>
+                    
+                    <b>This information will be shared with the Employer:</b>
+                
+                    <br>
+                     <span id="fname"></span>  <span id="lname"></span>
+                    <br>
+                     <span id="userEMail"></span>
+                    <br>
+                     <span id="Phonenum"></span>
+                   <br>  
+                    <span id="linkedinUrl"></span>
+                   <br>      
+                   <br>  
+                    Upload your CV:   <form  enctype="multipart/form-data" action="/upload/image" method="post">
+                      <input id="image-file" type="file" />   
+                    </form>    
+
+                    <input type="checkbox" name="Concent" id="concent"> I concent to this information being shared with the employer<br>
+
+                    <input class="button1 button2" type="button" onclick="back()" value="back"/>  
+                    <input class="button1 button3" type="button" onclick="Apply()" value="Apply"/> 
+                                    
+                                    <br/>
+                
+                </div>
+
+ <script src="apply.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+
+<head>  
+    <link href="styleprofile.css"media="all" rel="stylesheet" type="text/css"/>
+
+   
+</head>
+<body>
+ <div id="profileinfo">
+</span> <h2>User Information</h2>
+        <br>
+        <div id="completed">
+        Full Name: <span id="username"></span>
+
+        <br>
+        EMail: <span id="userEMail"></span>
+        
+</div>
+
+    <br>
+        <div id="tocomplete">
+       <a> Phone number:  </a> <span id="Phonenum"></span>
+       <br>
+        <input type="text" placeholder="+XX..." id="phone"> 
+                        <button id="phonebtn" onclick="Savephone()">Save</button> 
+                        <br/>
+                        <a> Your Linkedin:  </a>
+                        <a href='www.linkedin.com' id="linkedinUrl"></a>
+                        <br>
+                         <input type="text" placeholder="www.linkedin.com/..." id="linkedinurl"> 
+                        <button id="linkedinbtn" onclick="Savelinkedin()">Save</button> 
+                        
+                </div>
+                        
+                        <br/>
+                        
+
+
+</div>  
+<br/>
+<div id="preferences">
+</span> <h2>User Preferences</h2> <button class="button" id="edit" onclick="edit()">Edit</button> 
+<div id="cities"> 
+
+
+  <b>Cities</b>
+  <br/>
+           <span id="city1"></span>
+           <br/>
+          <span id="city2"></span>
+          <br/>
+          <span id="city3"></span>
+  
+  </div>  
+
+  <div id="TypeofJobs"> 
+      <br/>
+    
+      <b>Type of Jobs</b>
+      <br/>
+               <span id="type1"></span>
+               <br/>
+              <span id="type2"></span>
+              <br/>
+      
+      </div>  
+
+      
+</div>
+<button class=" button5" id="SeeJobs" onclick="SeeJobs()">See Job opportunities</button>
+
+<button class="button button2" id="SeeJobs" onclick="SeeJobs()">Jobs</button> 
+      <input class="button button3" type="button" value="Log out" onclick="btnLogoutUser()"/>
+
+
+<script  src="userClasses.js"></script>
+<script  src="newprof.js"></script>
+</body>
+</html>

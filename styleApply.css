@@ -1,0 +1,57 @@
+
+    html, body {     
+        color: #000;
+        font-family:'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
+        background:url(../student-intern.jpg);
+    opacity: 0.97;
+        background-size:cover;
+    
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;/* Do not repeat the image */
+        background-attachment: fixed;
+    
+    }
+    
+    #APPLY{
+        background-color: rgb(185, 185, 185);
+    
+        padding: 40px;
+        max-width:700;
+        border-radius: 10px;
+        box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+        /* transition: .5s ease; */
+        /* margin-left: 200px; */
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) }
+        
+      
+    .button1 {
+      border: none;
+      max-width:100;
+      color: white;
+      padding: 8px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      cursor: pointer;
+      margin-left: 70;  
+    }
+    
+    .button2{
+        background-color: rgb(145, 194, 226);
+          position: absolute;
+        top: 370px;
+        right:300px;
+    }
+    
+    .button3{
+        background-color: rgb(42, 118, 218);
+          position: absolute;
+        top: 370px;
+        right: 200px;
+    }

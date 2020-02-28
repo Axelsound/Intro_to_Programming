@@ -1,0 +1,206 @@
+html, body {     
+  color: #000;
+  font-family:'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
+  background:url(../student-intern.jpg);
+opacity: 0.97;
+  /* background-color: #F3F4F5; */
+  background-size:cover;
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-attachment: fixed;
+
+}
+
+#preferedcities{
+    
+  background-color: rgb(185, 185, 185);
+
+  padding: 60px;
+  max-width:700;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+  /* transition: .5s ease; */
+  /* margin-left: 200px; */
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%) 
+  }
+
+  #preferedtype{
+    background-color: rgb(185, 185, 185);
+
+  padding: 60px;
+  max-width:700;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+  /* transition: .5s ease; */
+  /* margin-left: 200px; */
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%) 
+  }
+
+
+  #Linkedin{
+    
+    padding: 10px;
+    position:relative; 
+    left:50px; bottom:0px;
+    max-width: 300px;
+    margin: 10px ;
+    border-radius: 4px;
+    box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+    transition: .5s ease;
+  }
+/* 
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+      top:but 0px;
+      right: 0px;
+  }
+  .button2{
+    position: absolute;
+      top: 0px;
+      right:110px;
+  }
+  .button3{
+    position: absolute;
+      top: 0px;
+      right: 0px;
+  } */
+
+  
+
+#profileinfo{
+    background-color: rgb(185, 185, 185);
+
+    padding: 20px;
+    /* max-width:1200; */
+    width:600;
+    height:150;
+    border-radius: 10px;
+    box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+    /* transition: .5s ease; */
+    /* margin-left: 200px; */
+    position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+
+#tocomplete{
+  position: absolute;
+        top: 65%;
+        left: 60%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+#completed{
+  position: absolute;
+        top: 55%;
+        left: 18%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+#preferences{
+  background-color: rgb(218, 218, 218);
+  width:600;
+  height:150;
+  padding: 20px;
+  /* max-width:700; */
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 4px rgba(19, 35, 47, 0.3);
+  /* transition: .5s ease; */
+  /* margin-left: 200px; */
+  position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%) }
+
+      #cities{
+        position: absolute;
+              top: 65%;
+              left: 18%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%)
+      }
+      
+      #TypeofJobs{
+        position: absolute;
+              top: 55%;
+              left: 60%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%)
+   
+      }
+
+
+.button {
+  background-color: rgb(105, 154, 194);
+  
+  color: white;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.button2{
+  position: absolute;
+    top: 0px;
+    right:110px;
+}
+.button3{
+  position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.button4{
+  position: absolute;
+    top: 80%;
+    right:50px;
+}
+
+.button5{
+  background-color: rgb(20, 54, 104);
+  width: 270px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+    top: 600px;
+    right:580px;
+}
+
+
+
